@@ -17,5 +17,4 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     Page<Product> findByActive(@Param("active") Boolean active, Pageable pageable);
 
     Page<Product> findByUnitPrice(@Param("unitPrice") Double unitPrice, Pageable pageable);
-
 }
